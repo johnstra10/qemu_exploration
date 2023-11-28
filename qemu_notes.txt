@@ -1,0 +1,99 @@
+/*++
+
+Date: 10 Jun 2023 - LMCE/CMCI
+
+MCG_CMCI_P
+MCG_LMCE_P
+
+cmci_supported
+lmce_supported
+
+kvm_mce_inject
+
+LMCE is supported in kvm guests.
+CMCI is not supported in kvm guests.
+- confirm this in guest OS
+
+--*/
+
+
+/*++
+
+Date: 20 Nov 2023 - Clone qemu and setup for build
+
+All the web sites say to use... git clone git://git.qemu-project.org/qemu.git.
+This doesn't work. Instead, https://git.qemu-project.org/qemu.git does work.
+
+must install python3-pip bison
+
+--*/
+
+/*++
+
+Date: 21 Nov 2023 - Build Instructions
+
+build instruction for qemu...
+https://wiki.qemu.org/Hosts/Linux
+
+# Switch to the QEMU root directory.
+cd qemu
+# Prepare a native debug build.
+mkdir -p bin/debug/native
+cd bin/debug/native
+# Configure QEMU and start the build.
+../../../configure --enable-debug
+make
+# Return to the QEMU root directory.
+cd ../../..
+
+Now let's start a simple test:
+
+bin/debug/native/x86_64-softmmu/qemu-system-x86_64 -L pc-bios
+
+--*/
+
+/*++
+
+Date: 21 Nov 2023 - Run private FW in guest
+
+To launch QEMU with a private firmware...
+- build OVMF
+- copy OVMF.fd to a local directory (this is just one way to do it)
+- create a virtual disk w/ qemu_create
+- launch qemu using the private ovmf.fd...
+- note: * This command line routes debug output to the specified file
+          the "-global isa-debugcon.iobase=0x3f8" is needed to ensure
+          that serial data is routed correctly.
+        * Another option is to use -debugcon stdio, which routes output
+
+
+johnstra@johnstra-ThinkStation-P520:~/dev/uefi_apps/qemu$ ~/dev/qemu/bin/debug/native/x86_64-softmmu/qemu-system-x86_64 -drive file=./ovmf.fd,format=raw,if=pflash -cdrom boot.img -debugcon file:debug.log -global isa-debugcon.iobase=0x3f8
+
+--*/
+
+/*++
+
+Date: 22 Nov 2023 - Launch Linux in VM w/ private QEMU and private OVMF FW
+
+ ~/dev/qemu/bin/debug/native/x86_64-softmmu/qemu-system-x86_64 -enable-kvm -cdrom ubuntu-22.04.3-desktop-amd64.iso -drive file=./ovmf.fd,format=raw,if=pflash -drive file=UbuntuDev.img -m 8G -cpu host -vga virtio -debugcon file:debug.log -global isa-debugcon.iobase=0x3f8 -boot menu=on
+
+--*/
+
+
+/*++
+
+Date: 22 Nov 2023 - Launch UEFI shell in VM w/ private QEMU and private OVMF FW
+
+~/dev/qemu/bin/debug/native/x86_64-softmmu/qemu-system-x86_64 -drive file=./ovmf.fd,format=raw,if=pflash -cdrom boot.img -debugcon file:debug.log -global isa-debugcon.iobase=0x3f8
+
+--*/
+
+
+/*++
+
+Date: 24 Nov 2023 - Start QEMU VM that includes an ERST
+
+To create a VM that includes an ERST, add the following to the qemu command line...
+    -object memory-backend-file,id=erstnvram,mem-path=acpi-erst.backing,size=0x10000,share=on -device acpi-erst,memdev=erstnvram
+
+--*/
