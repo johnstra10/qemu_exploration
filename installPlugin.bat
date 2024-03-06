@@ -1,9 +1,9 @@
 
-copy plugin.sys %systemroot%\system32\drivers\.
+copy azpshedpi.sys %systemroot%\system32\drivers\.
 
-sc create plugin type= kernel start= demand binPath= %systemroot%\system32\drivers\plugin.sys
+sc create azpshedpi type= kernel start= boot binPath= %systemroot%\system32\drivers\azpshedpi.sys
 
-sc start plugin
+sc start azpshedpi
 
 
 :Exit
