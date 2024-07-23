@@ -1,0 +1,861 @@
+<EINJ>
+  <ACPIStandardHeader>
+    <HeaderSignature FieldSize="4" ValueType="0">
+      EINJ
+    </HeaderSignature>
+    <Length FieldSize="4" ValuePresent="0">
+      0x0
+    </Length>
+    <Revision FieldSize="1" ValueType="1">
+      0x1
+    </Revision>
+    <Checksum FieldSize="1" ValuePresent="0">
+      0x0
+    </Checksum>
+    <OEMID FieldSize="6" ValueType="0">
+      MSFT
+    </OEMID>
+    <OEMTableID FieldSize="8" ValueType="0">
+      WHEAEINJ
+    </OEMTableID>
+    <OEMRevision FieldSize="4" ValueType="1">
+      0xabcdef01
+    </OEMRevision>
+    <CreatorID FieldSize="4" ValueType="0">
+      WHEA
+    </CreatorID>
+    <CreatorRevision FieldSize="4" ValueType="1">
+      0x00000001
+    </CreatorRevision>
+  </ACPIStandardHeader>
+  <InjectionHeader>
+    <InjectionHeaderSize FieldSize="4" ValueType="1">
+      0xC
+    </InjectionHeaderSize>
+    <InjectionFlags FieldSize="1" ValueType="1">
+      0x0
+    </InjectionFlags>
+    <Reserved FieldSize="3" ValueType="1">
+      0x0
+    </Reserved>
+    <InjectionEntryCount FieldSize="4" ValueType="1">
+      0x16
+    </InjectionEntryCount>
+  </InjectionHeader>
+  <InjectionActionTable>
+    <InjectionInstructionEntry>
+      <InjectionAction FieldSize="1" ValuePresent="0" ValueType="0">
+        BEGIN_INJECTION_OPERATION
+      </InjectionAction>
+      <Instruction FieldSize="1" ValuePresent="0" ValueType="0">
+        NOOP
+      </Instruction>
+      <Flags FieldSize="1" ValueType="1">
+        0x0
+      </Flags>
+      <Reserved FieldSize="1" ValueType="1">
+        0x0
+      </Reserved>
+      <RegisterRegion>
+        <Address_Space_ID FieldSize="1" ValueType="1">
+          0x0
+        </Address_Space_ID>
+        <Register_Bit_Width FieldSize="1" ValueType="1">
+          0x40
+        </Register_Bit_Width>
+        <Register_Bit_Offset FieldSize="1" ValueType="1">
+          0x0
+        </Register_Bit_Offset>
+        <Access_Size FieldSize="1" ValueType="1">
+          0x3
+        </Access_Size>
+        <Address FieldSize="8" ValueType="1">
+          0x0
+        </Address>
+      </RegisterRegion>
+      <Value FieldSize="8" ValueType="1">
+        0x0
+      </Value>
+      <Mask FieldSize="8" ValueType="1">
+        0xFFFFFFFFFFFFFFFF
+      </Mask>
+    </InjectionInstructionEntry>
+    <InjectionInstructionEntry>
+      <InjectionAction FieldSize="1" ValuePresent="0" ValueType="0">
+        BEGIN_INJECTION_OPERATION
+      </InjectionAction>
+      <Instruction FieldSize="1" ValuePresent="0" ValueType="0">
+        WRITE_REGISTER_VALUE
+      </Instruction>
+      <Flags FieldSize="1" ValueType="1">
+        0x0
+      </Flags>
+      <Reserved FieldSize="1" ValueType="1">
+        0x0
+      </Reserved>
+      <RegisterRegion>
+        <Address_Space_ID FieldSize="1" ValueType="1">
+          0x0
+        </Address_Space_ID>
+        <Register_Bit_Width FieldSize="1" ValueType="1">
+          0x40
+        </Register_Bit_Width>
+        <Register_Bit_Offset FieldSize="1" ValueType="1">
+          0x0
+        </Register_Bit_Offset>
+        <Access_Size FieldSize="1" ValueType="1">
+          0x3
+        </Access_Size>
+        <Address FieldSize="8" ValuePresent="0" ValueType="0">
+          OP_TYPE_REG
+        </Address>
+      </RegisterRegion>
+      <Value FieldSize="8" ValuePresent="0" ValueType="0">
+        INJECT
+      </Value>
+      <Mask FieldSize="8" ValueType="1">
+        0xFFFFFFFFFFFFFFFF
+      </Mask>
+    </InjectionInstructionEntry>
+    <InjectionInstructionEntry>
+      <InjectionAction FieldSize="1" ValuePresent="0" ValueType="0">
+        GET_TRIGGER_ERROR_ACTION_TABLE
+      </InjectionAction>
+      <Instruction FieldSize="1" ValuePresent="0" ValueType="0">
+        NOOP
+      </Instruction>
+      <Flags FieldSize="1" ValueType="1">
+        0x0
+      </Flags>
+      <Reserved FieldSize="1" ValueType="1">
+        0x0
+      </Reserved>
+      <RegisterRegion>
+        <Address_Space_ID FieldSize="1" ValueType="1">
+          0x0
+        </Address_Space_ID>
+        <Register_Bit_Width FieldSize="1" ValueType="1">
+          0x40
+        </Register_Bit_Width>
+        <Register_Bit_Offset FieldSize="1" ValueType="1">
+          0x0
+        </Register_Bit_Offset>
+        <Access_Size FieldSize="1" ValueType="1">
+          0x3
+        </Access_Size>
+        <Address FieldSize="8" ValueType="1">
+          0x0
+        </Address>
+      </RegisterRegion>
+      <Value FieldSize="8" ValueType="1">
+        0x0
+      </Value>
+      <Mask FieldSize="8" ValueType="1">
+        0xFFFFFFFFFFFFFFFF
+      </Mask>
+    </InjectionInstructionEntry>
+    <InjectionInstructionEntry>
+      <InjectionAction FieldSize="1" ValuePresent="0" ValueType="0">
+        GET_TRIGGER_ERROR_ACTION_TABLE
+      </InjectionAction>
+      <Instruction FieldSize="1" ValuePresent="0" ValueType="0">
+        WRITE_REGISTER_VALUE
+      </Instruction>
+      <Flags FieldSize="1" ValueType="1">
+        0x0
+      </Flags>
+      <Reserved FieldSize="1" ValueType="1">
+        0x0
+      </Reserved>
+      <RegisterRegion>
+        <Address_Space_ID FieldSize="1" ValueType="1">
+          0x0
+        </Address_Space_ID>
+        <Register_Bit_Width FieldSize="1" ValueType="1">
+          0x40
+        </Register_Bit_Width>
+        <Register_Bit_Offset FieldSize="1" ValueType="1">
+          0x0
+        </Register_Bit_Offset>
+        <Access_Size FieldSize="1" ValueType="1">
+          0x3
+        </Access_Size>
+        <Address FieldSize="8" ValuePresent="0" ValueType="0">
+          DUMMY_REG
+        </Address>
+      </RegisterRegion>
+      <Value FieldSize="8" ValueType="1">
+        0x0
+      </Value>
+      <Mask FieldSize="8" ValueType="1">
+        0xFFFFFFFFFFFFFFFF
+      </Mask>
+    </InjectionInstructionEntry>
+    <InjectionInstructionEntry>
+      <InjectionAction FieldSize="1" ValuePresent="0" ValueType="0">
+        GET_TRIGGER_ERROR_ACTION_TABLE
+      </InjectionAction>
+      <Instruction FieldSize="1" ValuePresent="0" ValueType="0">
+        READ_REGISTER
+      </Instruction>
+      <Flags FieldSize="1" ValueType="1">
+        0x0
+      </Flags>
+      <Reserved FieldSize="1" ValueType="1">
+        0x0
+      </Reserved>
+      <RegisterRegion>
+        <Address_Space_ID FieldSize="1" ValueType="1">
+          0x0
+        </Address_Space_ID>
+        <Register_Bit_Width FieldSize="1" ValueType="1">
+          0x40
+        </Register_Bit_Width>
+        <Register_Bit_Offset FieldSize="1" ValueType="1">
+          0x0
+        </Register_Bit_Offset>
+        <Access_Size FieldSize="1" ValueType="1">
+          0x4
+        </Access_Size>
+        <Address FieldSize="8" ValuePresent="0" ValueType="0">
+          TRIGGER_ERROR_ACTION_TABLE_REG
+        </Address>
+      </RegisterRegion>
+      <Value FieldSize="8" ValueType="1">
+        0x0
+      </Value>
+      <Mask FieldSize="8" ValueType="1">
+        0xFFFFFFFFFFFFFFFF
+      </Mask>
+    </InjectionInstructionEntry>
+    <InjectionInstructionEntry>
+      <InjectionAction FieldSize="1" ValuePresent="0" ValueType="0">
+        SET_ERROR_TYPE
+      </InjectionAction>
+      <Instruction FieldSize="1" ValuePresent="0" ValueType="0">
+        NOOP
+      </Instruction>
+      <Flags FieldSize="1" ValueType="1">
+        0x0
+      </Flags>
+      <Reserved FieldSize="1" ValueType="1">
+        0x0
+      </Reserved>
+      <RegisterRegion>
+        <Address_Space_ID FieldSize="1" ValueType="1">
+          0x0
+        </Address_Space_ID>
+        <Register_Bit_Width FieldSize="1" ValueType="1">
+          0x40
+        </Register_Bit_Width>
+        <Register_Bit_Offset FieldSize="1" ValueType="1">
+          0x0
+        </Register_Bit_Offset>
+        <Access_Size FieldSize="1" ValueType="1">
+          0x3
+        </Access_Size>
+        <Address FieldSize="8" ValueType="1">
+          0x0
+        </Address>
+      </RegisterRegion>
+      <Value FieldSize="8" ValueType="1">
+        0x0
+      </Value>
+      <Mask FieldSize="8" ValueType="1">
+        0xFFFFFFFFFFFFFFFF
+      </Mask>
+    </InjectionInstructionEntry>
+    <InjectionInstructionEntry>
+      <InjectionAction FieldSize="1" ValuePresent="0" ValueType="0">
+        SET_ERROR_TYPE
+      </InjectionAction>
+      <Instruction FieldSize="1" ValuePresent="0" ValueType="0">
+        WRITE_REGISTER
+      </Instruction>
+      <Flags FieldSize="1" ValueType="1">
+        0x0
+      </Flags>
+      <Reserved FieldSize="1" ValueType="1">
+        0x0
+      </Reserved>
+      <RegisterRegion>
+        <Address_Space_ID FieldSize="1" ValueType="1">
+          0x0
+        </Address_Space_ID>
+        <Register_Bit_Width FieldSize="1" ValueType="1">
+          0x40
+        </Register_Bit_Width>
+        <Register_Bit_Offset FieldSize="1" ValueType="1">
+          0x0
+        </Register_Bit_Offset>
+        <Access_Size FieldSize="1" ValueType="1">
+          0x3
+        </Access_Size>
+        <Address FieldSize="8" ValuePresent="0" ValueType="0">
+          SET_ERROR_TYPE_REG
+        </Address>
+      </RegisterRegion>
+      <Value FieldSize="8" ValueType="1">
+        0x0
+      </Value>
+      <Mask FieldSize="8" ValueType="1">
+        0xFFFFFFFFFFFFFFFF
+      </Mask>
+    </InjectionInstructionEntry>
+    <InjectionInstructionEntry>
+      <InjectionAction FieldSize="1" ValuePresent="0" ValueType="0">
+        GET_ERROR_TYPE
+      </InjectionAction>
+      <Instruction FieldSize="1" ValuePresent="0" ValueType="0">
+        NOOP
+      </Instruction>
+      <Flags FieldSize="1" ValueType="1">
+        0x0
+      </Flags>
+      <Reserved FieldSize="1" ValueType="1">
+        0x0
+      </Reserved>
+      <RegisterRegion>
+        <Address_Space_ID FieldSize="1" ValueType="1">
+          0x0
+        </Address_Space_ID>
+        <Register_Bit_Width FieldSize="1" ValueType="1">
+          0x40
+        </Register_Bit_Width>
+        <Register_Bit_Offset FieldSize="1" ValueType="1">
+          0x0
+        </Register_Bit_Offset>
+        <Access_Size FieldSize="1" ValueType="1">
+          0x3
+        </Access_Size>
+        <Address FieldSize="8" ValueType="1">
+          0x0
+        </Address>
+      </RegisterRegion>
+      <Value FieldSize="8" ValueType="1">
+        0x0
+      </Value>
+      <Mask FieldSize="8" ValueType="1">
+        0xFFFFFFFFFFFFFFFF
+      </Mask>
+    </InjectionInstructionEntry>
+    <InjectionInstructionEntry>
+      <InjectionAction FieldSize="1" ValuePresent="0" ValueType="0">
+        GET_ERROR_TYPE
+      </InjectionAction>
+      <Instruction FieldSize="1" ValuePresent="0" ValueType="0">
+        WRITE_REGISTER_VALUE
+      </Instruction>
+      <Flags FieldSize="1" ValueType="1">
+        0x0
+      </Flags>
+      <Reserved FieldSize="1" ValueType="1">
+        0x0
+      </Reserved>
+      <RegisterRegion>
+        <Address_Space_ID FieldSize="1" ValueType="1">
+          0x0
+        </Address_Space_ID>
+        <Register_Bit_Width FieldSize="1" ValueType="1">
+          0x40
+        </Register_Bit_Width>
+        <Register_Bit_Offset FieldSize="1" ValueType="1">
+          0x0
+        </Register_Bit_Offset>
+        <Access_Size FieldSize="1" ValueType="1">
+          0x3
+        </Access_Size>
+        <Address FieldSize="8" ValuePresent="0" ValueType="0">
+          DUMMY_REG
+        </Address>
+      </RegisterRegion>
+      <Value FieldSize="8" ValueType="1">
+        0x0
+      </Value>
+      <Mask FieldSize="8" ValueType="1">
+        0xFFFFFFFFFFFFFFFF
+      </Mask>
+    </InjectionInstructionEntry>
+    <InjectionInstructionEntry>
+      <InjectionAction FieldSize="1" ValuePresent="0" ValueType="0">
+        GET_ERROR_TYPE
+      </InjectionAction>
+      <Instruction FieldSize="1" ValuePresent="0" ValueType="0">
+        READ_REGISTER
+      </Instruction>
+      <Flags FieldSize="1" ValueType="1">
+        0x0
+      </Flags>
+      <Reserved FieldSize="1" ValueType="1">
+        0x0
+      </Reserved>
+      <RegisterRegion>
+        <Address_Space_ID FieldSize="1" ValueType="1">
+          0x0
+        </Address_Space_ID>
+        <Register_Bit_Width FieldSize="1" ValueType="1">
+          0x40
+        </Register_Bit_Width>
+        <Register_Bit_Offset FieldSize="1" ValueType="1">
+          0x0
+        </Register_Bit_Offset>
+        <Access_Size FieldSize="1" ValueType="1">
+          0x4
+        </Access_Size>
+        <Address FieldSize="8" ValuePresent="0" ValueType="0">
+          GET_ERROR_TYPE_REG
+        </Address>
+      </RegisterRegion>
+      <Value FieldSize="8" ValueType="1">
+        0xFFFFFFFF
+      </Value>
+      <Mask FieldSize="8" ValueType="1">
+        0xFFFFFFFFFFFFFFFF
+      </Mask>
+    </InjectionInstructionEntry>
+    <InjectionInstructionEntry>
+      <InjectionAction FieldSize="1" ValuePresent="0" ValueType="0">
+        END_OPERATION
+      </InjectionAction>
+      <Instruction FieldSize="1" ValuePresent="0" ValueType="0">
+        WRITE_REGISTER_VALUE
+      </Instruction>
+      <Flags FieldSize="1" ValueType="1">
+        0x0
+      </Flags>
+      <Reserved FieldSize="1" ValueType="1">
+        0x0
+      </Reserved>
+      <RegisterRegion>
+        <Address_Space_ID FieldSize="1" ValueType="1">
+          0x0
+        </Address_Space_ID>
+        <Register_Bit_Width FieldSize="1" ValueType="1">
+          0x40
+        </Register_Bit_Width>
+        <Register_Bit_Offset FieldSize="1" ValueType="1">
+          0x0
+        </Register_Bit_Offset>
+        <Access_Size FieldSize="1" ValueType="1">
+          0x3
+        </Access_Size>
+        <Address FieldSize="8" ValuePresent="0" ValueType="0">
+          DUMMY_REG
+        </Address>
+      </RegisterRegion>
+      <Value FieldSize="8" ValueType="1">
+        0x0
+      </Value>
+      <Mask FieldSize="8" ValueType="1">
+        0xFFFFFFFFFFFFFFFF
+      </Mask>
+    </InjectionInstructionEntry>
+    <InjectionInstructionEntry>
+      <InjectionAction FieldSize="1" ValuePresent="0" ValueType="0">
+        END_OPERATION
+      </InjectionAction>
+      <Instruction FieldSize="1" ValuePresent="0" ValueType="0">
+        NOOP
+      </Instruction>
+      <Flags FieldSize="1" ValueType="1">
+        0x0
+      </Flags>
+      <Reserved FieldSize="1" ValueType="1">
+        0x0
+      </Reserved>
+      <RegisterRegion>
+        <Address_Space_ID FieldSize="1" ValueType="1">
+          0x0
+        </Address_Space_ID>
+        <Register_Bit_Width FieldSize="1" ValueType="1">
+          0x40
+        </Register_Bit_Width>
+        <Register_Bit_Offset FieldSize="1" ValueType="1">
+          0x0
+        </Register_Bit_Offset>
+        <Access_Size FieldSize="1" ValueType="1">
+          0x3
+        </Access_Size>
+        <Address FieldSize="8" ValueType="1">
+          0x0
+        </Address>
+      </RegisterRegion>
+      <Value FieldSize="8" ValueType="1">
+        0x0
+      </Value>
+      <Mask FieldSize="8" ValueType="1">
+        0xFFFFFFFFFFFFFFFF
+      </Mask>
+    </InjectionInstructionEntry>
+    <InjectionInstructionEntry>
+      <InjectionAction FieldSize="1" ValuePresent="0" ValueType="0">
+        EXECUTE_OPERATION
+      </InjectionAction>
+      <Instruction FieldSize="1" ValuePresent="0" ValueType="0">
+        NOOP
+      </Instruction>
+      <Flags FieldSize="1" ValueType="1">
+        0x0
+      </Flags>
+      <Reserved FieldSize="1" ValueType="1">
+        0x0
+      </Reserved>
+      <RegisterRegion>
+        <Address_Space_ID FieldSize="1" ValueType="1">
+          0x0
+        </Address_Space_ID>
+        <Register_Bit_Width FieldSize="1" ValueType="1">
+          0x40
+        </Register_Bit_Width>
+        <Register_Bit_Offset FieldSize="1" ValueType="1">
+          0x0
+        </Register_Bit_Offset>
+        <Access_Size FieldSize="1" ValueType="1">
+          0x3
+        </Access_Size>
+        <Address FieldSize="8" ValueType="1">
+          0x0
+        </Address>
+      </RegisterRegion>
+      <Value FieldSize="8" ValueType="1">
+        0x0
+      </Value>
+      <Mask FieldSize="8" ValueType="1">
+        0xFFFFFFFFFFFFFFFF
+      </Mask>
+    </InjectionInstructionEntry>
+    <InjectionInstructionEntry>
+      <InjectionAction FieldSize="1" ValuePresent="0" ValueType="0">
+        EXECUTE_OPERATION
+      </InjectionAction>
+      <Instruction FieldSize="1" ValuePresent="0" ValueType="0">
+        WRITE_REGISTER_VALUE
+      </Instruction>
+      <Flags FieldSize="1" ValueType="1">
+        0x0
+      </Flags>
+      <Reserved FieldSize="1" ValueType="1">
+        0x0
+      </Reserved>
+      <RegisterRegion>
+        <Address_Space_ID FieldSize="1" ValueType="1">
+          0x0
+        </Address_Space_ID>
+        <Register_Bit_Width FieldSize="1" ValueType="1">
+          0x40
+        </Register_Bit_Width>
+        <Register_Bit_Offset FieldSize="1" ValueType="1">
+          0x0
+        </Register_Bit_Offset>
+        <Access_Size FieldSize="1" ValueType="1">
+          0x3
+        </Access_Size>
+        <Address FieldSize="8" ValuePresent="0" ValueType="0">
+          CMD_STATUS_REG
+        </Address>
+      </RegisterRegion>
+      <Value FieldSize="8" ValueType="1">
+        0x0
+      </Value>
+      <Mask FieldSize="8" ValueType="1">
+        0xFFFFFFFFFFFFFFFF
+      </Mask>
+    </InjectionInstructionEntry>
+    <InjectionInstructionEntry>
+      <InjectionAction FieldSize="1" ValuePresent="0" ValueType="0">
+        CHECK_BUSY_STATUS
+      </InjectionAction>
+      <Instruction FieldSize="1" ValuePresent="0" ValueType="0">
+        NOOP
+      </Instruction>
+      <Flags FieldSize="1" ValueType="1">
+        0x0
+      </Flags>
+      <Reserved FieldSize="1" ValueType="1">
+        0x0
+      </Reserved>
+      <RegisterRegion>
+        <Address_Space_ID FieldSize="1" ValueType="1">
+          0x0
+        </Address_Space_ID>
+        <Register_Bit_Width FieldSize="1" ValueType="1">
+          0x40
+        </Register_Bit_Width>
+        <Register_Bit_Offset FieldSize="1" ValueType="1">
+          0x0
+        </Register_Bit_Offset>
+        <Access_Size FieldSize="1" ValueType="1">
+          0x3
+        </Access_Size>
+        <Address FieldSize="8" ValueType="1">
+          0x0
+        </Address>
+      </RegisterRegion>
+      <Value FieldSize="8" ValueType="1">
+        0x0
+      </Value>
+      <Mask FieldSize="8" ValueType="1">
+        0xFFFFFFFFFFFFFFFF
+      </Mask>
+    </InjectionInstructionEntry>
+    <InjectionInstructionEntry>
+      <InjectionAction FieldSize="1" ValuePresent="0" ValueType="0">
+        CHECK_BUSY_STATUS
+      </InjectionAction>
+      <Instruction FieldSize="1" ValuePresent="0" ValueType="0">
+        WRITE_REGISTER_VALUE
+      </Instruction>
+      <Flags FieldSize="1" ValueType="1">
+        0x0
+      </Flags>
+      <Reserved FieldSize="1" ValueType="1">
+        0x0
+      </Reserved>
+      <RegisterRegion>
+        <Address_Space_ID FieldSize="1" ValueType="1">
+          0x0
+        </Address_Space_ID>
+        <Register_Bit_Width FieldSize="1" ValueType="1">
+          0x40
+        </Register_Bit_Width>
+        <Register_Bit_Offset FieldSize="1" ValueType="1">
+          0x0
+        </Register_Bit_Offset>
+        <Access_Size FieldSize="1" ValueType="1">
+          0x3
+        </Access_Size>
+        <Address FieldSize="8" ValuePresent="0" ValueType="0">
+          DUMMY_REG
+        </Address>
+      </RegisterRegion>
+      <Value FieldSize="8" ValueType="1">
+        0x0
+      </Value>
+      <Mask FieldSize="8" ValueType="1">
+        0xFFFFFFFFFFFFFFFF
+      </Mask>
+    </InjectionInstructionEntry>
+    <InjectionInstructionEntry>
+      <InjectionAction FieldSize="1" ValuePresent="0" ValueType="0">
+        CHECK_BUSY_STATUS
+      </InjectionAction>
+      <Instruction FieldSize="1" ValuePresent="0" ValueType="0">
+        READ_REGISTER_VALUE
+      </Instruction>
+      <Flags FieldSize="1" ValueType="1">
+        0x0
+      </Flags>
+      <Reserved FieldSize="1" ValueType="1">
+        0x0
+      </Reserved>
+      <RegisterRegion>
+        <Address_Space_ID FieldSize="1" ValueType="1">
+          0x0
+        </Address_Space_ID>
+        <Register_Bit_Width FieldSize="1" ValueType="1">
+          0x40
+        </Register_Bit_Width>
+        <Register_Bit_Offset FieldSize="1" ValueType="1">
+          0x0
+        </Register_Bit_Offset>
+        <Access_Size FieldSize="1" ValueType="1">
+          0x3
+        </Access_Size>
+        <Address FieldSize="8" ValuePresent="0" ValueType="0">
+          OP_BUSY_REG
+        </Address>
+      </RegisterRegion>
+      <Value FieldSize="8" ValueType="1">
+        0x1
+      </Value>
+      <Mask FieldSize="8" ValueType="1">
+        0xFFFFFFFFFFFFFFFF
+      </Mask>
+    </InjectionInstructionEntry>
+    <InjectionInstructionEntry>
+      <InjectionAction FieldSize="1" ValuePresent="0" ValueType="0">
+        GET_COMMAND_STATUS
+      </InjectionAction>
+      <Instruction FieldSize="1" ValuePresent="0" ValueType="0">
+        NOOP
+      </Instruction>
+      <Flags FieldSize="1" ValueType="1">
+        0x0
+      </Flags>
+      <Reserved FieldSize="1" ValueType="1">
+        0x0
+      </Reserved>
+      <RegisterRegion>
+        <Address_Space_ID FieldSize="1" ValueType="1">
+          0x0
+        </Address_Space_ID>
+        <Register_Bit_Width FieldSize="1" ValueType="1">
+          0x40
+        </Register_Bit_Width>
+        <Register_Bit_Offset FieldSize="1" ValueType="1">
+          0x0
+        </Register_Bit_Offset>
+        <Access_Size FieldSize="1" ValueType="1">
+          0x3
+        </Access_Size>
+        <Address FieldSize="8" ValueType="1">
+          0x0
+        </Address>
+      </RegisterRegion>
+      <Value FieldSize="8" ValueType="1">
+        0x0
+      </Value>
+      <Mask FieldSize="8" ValueType="1">
+        0xFFFFFFFFFFFFFFFF
+      </Mask>
+    </InjectionInstructionEntry>
+    <InjectionInstructionEntry>
+      <InjectionAction FieldSize="1" ValuePresent="0" ValueType="0">
+        GET_COMMAND_STATUS
+      </InjectionAction>
+      <Instruction FieldSize="1" ValuePresent="0" ValueType="0">
+        WRITE_REGISTER_VALUE
+      </Instruction>
+      <Flags FieldSize="1" ValueType="1">
+        0x0
+      </Flags>
+      <Reserved FieldSize="1" ValueType="1">
+        0x0
+      </Reserved>
+      <RegisterRegion>
+        <Address_Space_ID FieldSize="1" ValueType="1">
+          0x0
+        </Address_Space_ID>
+        <Register_Bit_Width FieldSize="1" ValueType="1">
+          0x40
+        </Register_Bit_Width>
+        <Register_Bit_Offset FieldSize="1" ValueType="1">
+          0x0
+        </Register_Bit_Offset>
+        <Access_Size FieldSize="1" ValueType="1">
+          0x3
+        </Access_Size>
+        <Address FieldSize="8" ValuePresent="0" ValueType="0">
+          DUMMY_REG
+        </Address>
+      </RegisterRegion>
+      <Value FieldSize="8" ValueType="1">
+        0x0
+      </Value>
+      <Mask FieldSize="8" ValueType="1">
+        0xFFFFFFFFFFFFFFFF
+      </Mask>
+    </InjectionInstructionEntry>
+    <InjectionInstructionEntry>
+      <InjectionAction FieldSize="1" ValuePresent="0" ValueType="0">
+        GET_COMMAND_STATUS
+      </InjectionAction>
+      <Instruction FieldSize="1" ValuePresent="0" ValueType="0">
+        READ_REGISTER_VALUE
+      </Instruction>
+      <Flags FieldSize="1" ValueType="1">
+        0x0
+      </Flags>
+      <Reserved FieldSize="1" ValueType="1">
+        0x0
+      </Reserved>
+      <RegisterRegion>
+        <Address_Space_ID FieldSize="1" ValueType="1">
+          0x0
+        </Address_Space_ID>
+        <Register_Bit_Width FieldSize="1" ValueType="1">
+          0x40
+        </Register_Bit_Width>
+        <Register_Bit_Offset FieldSize="1" ValueType="1">
+          0x0
+        </Register_Bit_Offset>
+        <Access_Size FieldSize="1" ValueType="1">
+          0x3
+        </Access_Size>
+        <Address FieldSize="8" ValuePresent="0" ValueType="0">
+          CMD_STATUS_REG
+        </Address>
+      </RegisterRegion>
+      <Value FieldSize="8" ValueType="1">
+        0x0
+      </Value>
+      <Mask FieldSize="8" ValueType="1">
+        0xFFFFFFFFFFFFFFFF
+      </Mask>
+    </InjectionInstructionEntry>
+    <InjectionInstructionEntry>
+      <InjectionAction FieldSize="1" ValuePresent="0" ValueType="0">
+        SET_ERROR_TYPE_WITH_ADDRESS
+      </InjectionAction>
+      <Instruction FieldSize="1" ValuePresent="0" ValueType="0">
+        NOOP
+      </Instruction>
+      <Flags FieldSize="1" ValueType="1">
+        0x0
+      </Flags>
+      <Reserved FieldSize="1" ValueType="1">
+        0x0
+      </Reserved>
+      <RegisterRegion>
+        <Address_Space_ID FieldSize="1" ValueType="1">
+          0x0
+        </Address_Space_ID>
+        <Register_Bit_Width FieldSize="1" ValueType="1">
+          0x0
+        </Register_Bit_Width>
+        <Register_Bit_Offset FieldSize="1" ValueType="1">
+          0x0
+        </Register_Bit_Offset>
+        <Access_Size FieldSize="1" ValueType="1">
+          0x3
+        </Access_Size>
+        <Address FieldSize="8" ValueType="1">
+          0x0
+        </Address>
+      </RegisterRegion>
+      <Value FieldSize="8" ValueType="1">
+        0x0
+      </Value>
+      <Mask FieldSize="8" ValueType="1">
+        0xFFFFFFFFFFFFFFFF
+      </Mask>
+    </InjectionInstructionEntry>
+    <InjectionInstructionEntry>
+      <InjectionAction FieldSize="1" ValuePresent="0" ValueType="0">
+        SET_ERROR_TYPE_WITH_ADDRESS
+      </InjectionAction>
+      <Instruction FieldSize="1" ValuePresent="0" ValueType="0">
+        WRITE_REGISTER
+      </Instruction>
+      <Flags FieldSize="1" ValueType="1">
+        0x0
+      </Flags>
+      <Reserved FieldSize="1" ValueType="1">
+        0x0
+      </Reserved>
+      <RegisterRegion>
+        <Address_Space_ID FieldSize="1" ValueType="1">
+          0x0
+        </Address_Space_ID>
+        <Register_Bit_Width FieldSize="1" ValueType="1">
+          0x0
+        </Register_Bit_Width>
+        <Register_Bit_Offset FieldSize="1" ValueType="1">
+          0x0
+        </Register_Bit_Offset>
+        <Access_Size FieldSize="1" ValueType="1">
+          0x3
+        </Access_Size>
+        <Address FieldSize="8" ValuePresent="0" ValueType="1">
+          SET_ERROR_TYPE_WITH_ADDR
+        </Address>
+      </RegisterRegion>
+      <Value FieldSize="364" ValueType="1">
+        0x0
+      </Value>
+      <Mask FieldSize="8" ValueType="1">
+        0xFFFFFFFFFFFFFFFF
+      </Mask>
+    </InjectionInstructionEntry>
+  </InjectionActionTable>
+</EINJ>
