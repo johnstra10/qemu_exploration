@@ -1,0 +1,10 @@
+// To see traces from debugger:
+// !wmitrace.start dbg -kd -ft 10ms
+// !wmitrace.enable dbg {2ac399d8-6fb9-4ac0-b50a-6ac4fafa227b} -level 6 -matchanykw 0xffff
+// {2ac399d8-6fb9-4ac0-b50a-6ac4fafa227b}
+
+
+// Too see traces from debugger:
+!wmitrace.start dbg -kd -ft 10ms
+!wmitrace.enable dbg {23504b92-f445-4b96-a28b-0c1dca8fb990} -level 6 -matchanykw 0xffff
+
