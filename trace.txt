@@ -1,12 +1,14 @@
-HKEY_LOCAL_MACHINE\system\currentcontrolset\control\wmi\autologger\pshed
-    Status    REG_DWORD    0x0
-    Start    REG_DWORD    0x1
-    FileName    REG_SZ    C:\work\pshedlog.etl
-    Guid    REG_SZ    {23504b92-f445-4b96-a28b-0c1dca8fb990}
+Windows Registry Editor Version 5.00
 
-HKEY_LOCAL_MACHINE\system\currentcontrolset\control\wmi\autologger\pshed\{23504b92-f445-4b96-a28b-0c1dca8fb990}
-    Start    REG_DWORD    0x1
-    Enabled    REG_DWORD    0x1
-    EnableFlags    REG_DWORD    0x6
-    Status    REG_DWORD    0x0
+[HKEY_LOCAL_MACHINE\system\currentcontrolset\control\wmi\autologger\pshed]
+"Status"=dword:00000000
+"Start"=dword:00000001
+"FileName"="C:\work\pshedlog.etl"
+"GUID"="{23504b92-f445-4b96-a28b-0c1dca8fb990}"
+
+'HKEY_LOCAL_MACHINE\system\currentcontrolset\control\wmi\autologger\pshed\{23504b92-f445-4b96-a28b-0c1dca8fb990}]
+"Start"=dword:00000001
+"Enabled"=dword:00000001
+"EnableFlags"=dword:00000006
+"Status"=dword:00000000
  
